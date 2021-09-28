@@ -5,4 +5,8 @@ module.exports = {
   trailingComma: 'all',
   arrowParens: 'avoid',
   printWidth: 100,
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  }
 };
