@@ -7,10 +7,10 @@ const App = () => {
     <SafeAreaView style={styles.safeAreaView}>
       <Image source={require('../tht-onboarding/assets/img/logo.png')} style={styles.image} />
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.createAccBtn}>
+        <TouchableOpacity style={[styles.button, styles.createAccBtn]}>
           <Text>Create Account</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.signInBtn}>
+        <TouchableOpacity style={[styles.button, styles.signInBtn]}>
           <Text>Sign In</Text>
         </TouchableOpacity>
       </View>
@@ -28,23 +28,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  createAccBtn: {
-    borderWidth: 0.5,
-    borderColor: '#FF7C1E',
+  button: {
     height: 50,
     width: 200,
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  createAccBtn: {
+    borderWidth: 0.5,
+    borderColor: '#FF7C1E',
+  },
   signInBtn: {
     backgroundColor: '#FF7C1E',
-    height: 50,
-    width: 200,
     marginTop: 10,
-    borderRadius: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   image: {
     flex: 1,
